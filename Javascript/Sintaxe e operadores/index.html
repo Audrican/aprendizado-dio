@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividade Sintaxe e Operadores</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function frase (a,b){
+            var x = document.getElementById("primeironumero").valueAsNumber;
+            var y = document.getElementById("segundonumero").valueAsNumber;
+            const soma = x + y;
+            comparacao (x,y);
+            adicao (soma);
+            quedez(soma);
+            quevinte(soma);
+        }
+        function comparacao (a,b) {
+            if (a === b){
+                document.getElementById("primeirafrase").innerHTML = "Os números " + a + " e " + b + " são iguais.";
+            }
+            else{
+                document.getElementById("primeirafrase").innerHTML = "Os números " + a + " e " + b + " não são iguais.";
+            }
+        }
+        function adicao (soma) {
+            document.getElementById("resultadosoma").innerHTML = "Sua soma é " + soma + ", ";
+        }
+        function quedez(soma) {
+            if (soma > 10) {
+                document.getElementById("dez").innerHTML = "que é maior que 10 e ";
+            }
+            else {
+                if (soma === 10) {
+                    document.getElementById("dez").innerHTML = "que é igual a 10 e ";
+                }
+                else {
+                    document.getElementById("dez").innerHTML = "que é menor que 10 e ";
+                }
+            }
+        }
+        function quevinte(soma) {
+            if (soma > 20) {
+                document.getElementById("vinte").innerHTML = "maior que 20.";
+            }
+            else {
+                if (soma === 20) {
+                    document.getElementById("vinte").innerHTML = "é igual a 20.";
+                }
+                else {
+                    document.getElementById("vinte").innerHTML = "menor que 20.";
+                }
+            }
+        }
+            </script>
+</head>
+<body>
+    <h1>Atividade Javascript - Sintaxe e Operadores</h1>
+    <p>Insira o primeiro número</p>
+    <input id="primeironumero" type="number" value="">
+    <p>Insira o segundo número</p>
+    <input id="segundonumero" type="number" value="">
+    <button onclick="frase(primeironumero,segundonumero)">Calcule</button>
+    <p>
+        <span id="primeirafrase"></span> <span id="resultadosoma"></span> <span id="dez"></span> <span id="vinte"></span>
+    </p>
+</body>
+</html>
