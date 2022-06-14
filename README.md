@@ -1,10 +1,11 @@
-# Oi, tudo bem? Chegou aqui através do curso, certo? 🙃
+# aprendizado-dio
+ Repositório para organizar o aprendizado adquirido na plataforma dio.me
 
-Esse é o repositório da nossa aula de Flexbox, na qual vamos fazer a interface de login do Instagram! 
+Estragão: Desafio de projeto para clonar a interface do site principal do Instagram, modificado para parecer um site dedicado à erva Estragão.
+Javascript: Pasta dedicada as atividades de Javascript
 
-### Os requisitos são:
+## Links úteis
 
-* [HTML básico](https://www.w3schools.com/html/)
-* [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[Markdown basic syntax](https://www.markdownguide.org/basic-syntax/)
 
-## 🚀 Let's code! 🚀
+[W3school](https://www.w3schools.com/)
